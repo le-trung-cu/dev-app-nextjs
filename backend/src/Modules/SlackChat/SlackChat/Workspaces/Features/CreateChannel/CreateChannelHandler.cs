@@ -1,4 +1,3 @@
-
 namespace SlackChat.Workspaces.Features.CreateChannel;
 
 public record CreateChannelCommand

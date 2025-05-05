@@ -5,6 +5,7 @@ using SlackChat;
 using Shared.Exceptions.Handler;
 using Shared.Extensions;
 using Shared.Services;
+using Catalog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +33,8 @@ var slackAssembly = typeof(SlackChatModule).Assembly;
 builder.Services
     .AddAuthModule(builder.Configuration)
     .AddJiraTaskManagerModule(builder.Configuration)
-    .AddSlackChatModule(builder.Configuration);
+    .AddSlackChatModule(builder.Configuration)
+    .AddEshopCatalogModule(builder.Configuration);
 
 builder.Services.AddMediatRWithAssemblies(
     authAssembly,
@@ -68,7 +70,8 @@ app.UseExceptionHandler(options => { });
 app.UseStaticFiles();
 app.UseAuthModule()
     .UseJiraTaskManagerModule()
-    .UseSlackChatModule();
+    .UseSlackChatModule()
+    .UseEshopCatalogModule();
 
 app.UseSlackChatHub();
 

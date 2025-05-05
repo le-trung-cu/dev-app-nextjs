@@ -11,5 +11,5 @@ global using Auth.Auth.Services;
 global using Auth.Contracts.Auth.Dtos;
 global using Mapster;
 global using Microsoft.AspNetCore.Http;
-global using Shared.CQRS;
+global using Shared.Contracts.CQRS;
 global using MediatR;

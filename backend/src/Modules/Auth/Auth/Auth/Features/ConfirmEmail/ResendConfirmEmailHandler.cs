@@ -1,5 +1,3 @@
-
-using Microsoft.AspNetCore.Http.HttpResults;
 using Shared.Exceptions;
 
 namespace Auth.Auth.Features.ConfirmEmail;

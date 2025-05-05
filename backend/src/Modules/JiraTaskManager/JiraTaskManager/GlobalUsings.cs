@@ -7,7 +7,7 @@ global using System.Security.Claims;
 global using JiraTaskManager.Data;
 global using Mapster;
 global using Microsoft.AspNetCore.Http;
-global using Shared.CQRS;
+global using Shared.Contracts.CQRS;
 global using Shared.Extensions;
 global using Shared.Services;
 global using JiraTaskManager.Workspaces.Dtos;

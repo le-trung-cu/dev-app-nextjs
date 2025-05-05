@@ -3,7 +3,7 @@ global using SlackChat.Data;
 global using Carter;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Routing;
-global using Shared.CQRS;
+global using Shared.Contracts.CQRS;
 global using Shared.Exceptions;
 global using Shared.DDD;
 global using System.Security.Claims;

@@ -11,3 +11,5 @@ dotnet ef migrations add JiraAddPositionColumnInTasks -o ./Data/Migrations -c Wo
 dotnet ef migrations add SequentialGuidIdMessageeMigration -o ./Data/Migrations -c SlackChat.Data.WorkspaceDbContext -s ../../../Bootstrapper/Api/Api.csproj 
 
 dotnet ef database update -c SlackChat.Data.WorkspaceDbContext
+
+dotnet ef migrations add InitialEshopCatalog -o ./Data/Migrations -c CatalogDbContext -s ../../../../Bootstrapper/Api/Api.csproj 

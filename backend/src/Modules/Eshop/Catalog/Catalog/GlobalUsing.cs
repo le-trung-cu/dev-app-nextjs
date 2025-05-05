@@ -1,3 +1,11 @@
 global using Shared.DDD;
-global using Shared.CQRS;
+global using Shared.Contracts.CQRS;
 global using Shared.Exceptions;
+global using Shared.Data.Seed;
+global using Catalog.Categories.Models;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Catalog.Products.Models;
+global using Catalog.Products.Events;
+global using MediatR;
+global using Microsoft.Extensions.Logging;

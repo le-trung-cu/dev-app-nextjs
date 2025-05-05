@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../../Modules/Auth/Auth/Auth.csproj" />
+    <ProjectReference Include="../../Modules/Eshop/Catalog/Catalog/Catalog.csproj" />
     <ProjectReference Include="../../Modules/JiraTaskManager/JiraTaskManager/JiraTaskManager.csproj" />
     <ProjectReference Include="../../Modules/SlackChat/SlackChat/SlackChat.csproj" />
   </ItemGroup>

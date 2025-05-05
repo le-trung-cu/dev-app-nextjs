@@ -1,5 +1,4 @@
 using Auth.Contracts.Auth.Dtos;
-using Shared.CQRS;
 
 namespace Auth.Contracts.Auth.Features.GetUsers;
 

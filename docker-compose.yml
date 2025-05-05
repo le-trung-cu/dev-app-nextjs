@@ -15,6 +15,7 @@ services:
   messagebus:
     image: rabbitmq:management
     container_name: rabbitmq_container
+    hostname: ecommerce-mq
     restart: always
     ports:
       - "5672:5627"
@@ -22,6 +23,7 @@ services:
     environment:
       - RABITMQ_DEFAULT_USER=guest
       - RABITMQ_DEFAULT_PASS=guest
+  
 volumes:
   devapp_db:
   # redis_data:
